@@ -1,0 +1,14 @@
+<section>
+     <div fxLayout="row" fxFlex>
+          <img [src]="catImg.file"
+               *ngIf="!isImageLoading" width="700" height="600">
+     </div>
+</section>
+
+
+<section>
+     <div fxLayout="row" fxFlex>
+          <button mat-button color="primary" (click)="getCat()">Give me a cat</button>
+     </div>
+</section>
+
